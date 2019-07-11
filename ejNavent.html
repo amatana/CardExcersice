@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatibe" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+
+    <script type="text/javascript">
+    </script>
+    <title>Ejercicio Navent</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container centered">
+
+            <img id='img_prop'
+                src="https://static1.sosiva451.com/3540595/7aef40b0-57f5-4568-a3fc-2c4a7ca85bd2_u_large.jpg"
+                alt="property_photo"></img>
+
+
+            <div class="element">
+                <div class="descript">
+                    <strong>
+                        <p class='titleStyle' id="title"></p>
+                    </strong>
+                    <div id='location'>
+                        <img id="img_location"
+                            src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/location-alt-512.png"
+                            alt="locationg_png">
+                        <p id='location_descript'></p>
+                    </div>
+                    <p id='prop_descript'></p>
+                    <div id='pricing'>
+                        <div id='price_section'>
+                            <div>
+                                <span id='currency'> </span>
+                                <span id='price' class="pointer"></span>
+                            </div>
+
+                            <span class="price_m"><span id='price_m'></span> </span>
+                        </div>
+                        <div id='priceChange' class='off'>
+                            <div>
+                                <input name='price' class="invisible" type='number' id='newPrice'><br>
+                                <small>modifique el precio de su propiedad sin puntos ni comas</small>
+                            </div>
+                            <span class="price_m "><span id='price_m'></span> </span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="footer">
+                    <div id='infoFooter'>
+                        <span id='mts'></span>
+                        <span id='rooms_Dormitorios'></span>
+                        <span id='rooms_Baños'></span>
+                        <span id='rooms_Cochera'></span>
+                    </div>
+                    <div id='contact' class="titleStyle center pointer">
+                        <a id='contactBtn'>CONTACTAR</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="showContact off box" id="contactForm">
+            <img src="https://www.freeiconspng.com/uploads/close-button-png-27.png" alt="closePNG" id='closeLeft'
+                class="pointer">
+            <br>
+            <p class="titleStyle"> Para ser contactado por favor ingrese su casilla de correo electŕonico</p>
+            <label for="email">Email:</label>
+            <input type="email" name='email' id='mailInput'>
+            <a class="pointer send">ENVIAR</a>
+        </div>
+
+
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+
+</body>
+
+</html>
