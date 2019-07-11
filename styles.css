@@ -6,22 +6,26 @@
 .container {
     position: relative;
     display: grid;
-    grid-template-columns: 0.35fr 0.65fr; 
+    grid-template-columns: 0.35fr 0.65fr;
     max-width: 875px;
     min-width: 734px;
     border: 1px solid lightgrey;
 }
-.centered{
+
+.centered {
     margin: 20px auto;
 }
-#img_prop{
+
+#img_prop {
     width: 100%;
     height: 100%;
 }
+
 .descript {
     width: 100%;
     height: 75%;
 }
+
 .footer {
     height: 25%;
     display: grid;
@@ -29,6 +33,7 @@
     bottom: 0;
     background-color: #ebeced
 }
+
 #location * {
     display: inline-block;
     font-size: 0.75em;
@@ -48,22 +53,22 @@
     font-weight: bold
 }
 
-.off,
-.off *{
+.off, .off * {
     display: none;
 }
 
-#contactForm{
-    width: 75%;
+#contactForm {
+    width: 65%;
     margin: 0 auto;
     position: fixed;
     top: 25%;
     left: 15%;
-    background-color:rgba(255,255,255,0.98);
+    background-color: rgba(255, 255, 255, 0.98);
     height: 250px;
     padding: 10px;
 }
-small{
+
+small {
     font-size: 0.7em
 }
 
@@ -71,29 +76,32 @@ div#location {
     margin: 0px 15px;
 }
 
-label{
+label {
     display: inline-block;
     margin: 10px;
-    font-size: 1.1em;   
+    font-size: 1.1em;
 }
+
 .center {
     display: inline-block;
     margin: auto;
 }
 
-div#contactBtn{
+div#contactBtn {
     text-align: center
 }
 
-#contact a{
+#contact a {
     font-size: 1em;
     font-weight: bold;
 }
+
 p#prop_descript {
     font-size: 0.75em;
     margin: 5px 10px;
 }
-#price_section{
+
+#price_section {
     display: grid;
     grid-template-columns: 0.5fr 0.4fr
 }
@@ -105,12 +113,12 @@ p#prop_descript {
     display: inline-block
 }
 
-span#currency{
+span#currency {
     display: inline-block;
     margin: 10px 7px 0px 7px;
 }
 
-span.price_m{
+span.price_m {
     font-size: 0.8em;
     display: inline-block;
     margin: auto 0px;
@@ -118,66 +126,77 @@ span.price_m{
     font-weight: bold
 }
 
-
 .footer span {
     display: inline-block;
     margin: 10px;
     font-size: 0.7em
 }
 
-
-#mailInput{
+#mailInput {
     display: inline-block;
     width: 90%;
     height: 40px;
     margin: 10px 5%;
     border: none;
     border-bottom: 1px solid black;
-    background-color: rgba(255,255,255,0);
-    font-size:1.2em;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 1.2em;
 }
+
 #mailInput:focus {
     outline-width: 0;
     border: none;
-    border-bottom: 3px solid #67bdcf; 
+    border-bottom: 3px solid #67bdcf;
 }
-.pointer:hover{
+
+.pointer:hover {
     cursor: pointer
 }
-.send{
+
+.send {
     float: right;
     margin: 7%;
     font-size: 1.2em;
     font-weight: bold;
     color: #67bdcf
 }
-#closeLeft{
+
+#closeLeft {
     display: block;
     float: right;
     width: 4%;
     margin: 5px 7px;
 }
+
 .box {
     border: 1px solid lightgray;
-    border-radius: 30px;
+    border-radius: 20px;
 }
-.invisible{
+
+.invisible {
     border: none;
     height: 35px;
     border-bottom: 1px solid black;
 }
-.invisible:focus{
+
+.invisible:focus {
     outline-width: 0;
     border: none;
-    border-bottom: 2px solid #67bdcf;  
-}
-#priceChange{
-    padding: 3px 15px;
+    border-bottom: 2px solid #67bdcf;
 }
 
-@media (max-width: 733px){
-    #app{
-        width:80%;
+#priceChange {
+    padding: 3px 15px;
+}
+.red{
+    color: red;
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+@media (max-width: 733px) {
+    #app {
         margin: 0 auto;
     }
     .container {
@@ -186,5 +205,51 @@ span.price_m{
         max-width: 414px;
         min-width: 320px;
         border: 1px solid lightgrey;
+    }
+    div#currentPrice {
+        position: absolute;
+        top: 35%;
+        left: 3%;
+        color: white;
+        font-size: 1.3em;
+    }
+    div#infoFooter {
+        position: absolute;
+        top: 43%;
+        left: 3%;
+        color: white;
+        font-size: 1.1em;
+    }
+    span#price_m {
+        display: none;
+    }
+    div.footer {
+        background-color: white;
+        padding: 5%;
+        position: relative;
+    }
+    div#infoFooter {
+        position: absolute;
+        top: -240px;
+        font-size: 1.1em;
+        color: white;
+        font-weight: bold;
+    }
+    a#contactBtn {
+        position: absolute;
+        position: absolute;
+        bottom: 8px;
+        right: 19px;
+        font-size: 1.3em;
+    }
+    img#closeLeft {
+        width: 10%;
+    }
+    #contactForm {
+        width: 85%;
+        margin: 0 auto;
+        position: fixed;
+        top: 21%;
+        left: 7.5%;
     }
 }

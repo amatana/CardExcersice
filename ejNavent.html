@@ -37,7 +37,7 @@
                     <p id='prop_descript'></p>
                     <div id='pricing'>
                         <div id='price_section'>
-                            <div>
+                            <div id='currentPrice'>
                                 <span id='currency'> </span>
                                 <span id='price' class="pointer"></span>
                             </div>
@@ -60,7 +60,7 @@
                     <div id='infoFooter'>
                         <span id='mts'></span>
                         <span id='rooms_Dormitorios'></span>
-                        <span id='rooms_Baños'></span>
+                        <span id='rooms_Baño'></span>
                         <span id='rooms_Cochera'></span>
                     </div>
                     <div id='contact' class="titleStyle center pointer">
@@ -78,8 +78,9 @@
             <br>
             <p class="titleStyle"> Para ser contactado por favor ingrese su casilla de correo electŕonico</p>
             <label for="email">Email:</label>
-            <input type="email" name='email' id='mailInput'>
-            <a class="pointer send">ENVIAR</a>
+            <input type="email" name='email' id='mailInput' placeholder="Ingresá tu email">
+            <small class='off red'>Por favor inserte un email válido</small>
+            <a class="pointer send" id='enviarBtn'> ENVIAR</a>
         </div>
 
 
